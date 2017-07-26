@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Syntax Highlighter</title>
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night.min.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.5/ace.js"></script>
+        <script src="main.js"></script>
+        <div id="bg-hack"></div>
+        <div id="wrapper" class="row">
+            <div class="col">
+                <div id="code"></div>
+            </div>
+            <div class="col">
+                <div id="opt">
+                    <p>Font: </p>
+                    <input type="text" value="Source Code Pro" id="opt-font">
+                    <p>Size: </p>
+                    <input type="text" value="12" id="opt-size">
+                    <p>Lang: </p>
+                    <input type="text" value="Java" id="opt-lang">
+                </div>
+                <pre id="out"></pre>
+            </div>
+        </div>
+    </body>
+</html>
